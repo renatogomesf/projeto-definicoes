@@ -2,6 +2,13 @@
 
 /* TELAS PEQUENAS: screen and (min-width: 481px) and (max-width: 767px) */
 
+body {
+    background-image: url(../img/math6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 main {
     min-width: 450px;
     max-width: 600px;
