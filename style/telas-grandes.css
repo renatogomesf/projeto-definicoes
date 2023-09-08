@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/* TELAS GRANDES: screen and (min-width: 1920px) */
+
+main {
+    display: flex;
+    max-width: 700px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn {
+    margin: 5px;
+    width: 300px;
+}

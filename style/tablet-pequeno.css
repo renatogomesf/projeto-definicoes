@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* TABLET PEQUENO: screen and (min-width: 768px) and (max-width: 991px) */
+
+main {
+    min-width: 450px;
+    max-width: 600px;
+    margin: 20px;
+}

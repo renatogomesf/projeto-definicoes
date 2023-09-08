@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/* MOBILE: screen and (max-width: 480px) */
+
+body {
+    background-image: url(../img/math6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    max-width: 340px;
+}

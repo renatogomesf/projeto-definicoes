@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+/* CONFIGURAÇÕES GERAIS: Todas as Medias */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    background-image: url(../img/math7.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    background-color: white;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.61);
+    color: black;
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    margin: 20px 0px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.603);
+}
+
+h3{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.descricao {
+    text-align: justify;
+    margin: 20px 10px;
+    text-indent: 20px;
+}
+
+.numero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.valor1, .valor2 {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input1, .input2 {
+    width: 145px;
+    padding: 5px;
+    margin: 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    font-weight: bold;
+    margin: 0px 5px;
+    padding: 7px;
+    background-color: #d0e6cf;
+    border: none;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+.btn:hover {
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+
+.btn:focus {
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+
+.soma, .subtracao, .multiplicacao, .divisao {
+    display: none;
+    text-align: justify;
+    margin: 10px;
+    text-indent: 15px;
+}
+
+p {
+    margin: 10px;
+}
+
+.link {
+    text-align: center;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+#res {
+    margin: 20px 0px;
+    font-weight: bold;
+    text-align: center;
+}

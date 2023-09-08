@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação numérica</title>
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="img/icons8-matemática-16.png" type="image/x-icon">
+
+    <!-- Media Query -->
+    <link rel="stylesheet" href="style/geral.css" media="all">
+
+    <link rel="stylesheet" href="style/mobile.css" media="screen and (max-width: 480px)">
+
+    <link rel="stylesheet" href="style/telas-pequenas.css" media="screen and (min-width: 481px) and (max-width: 767px)">
+
+    <link rel="stylesheet" href="style/tablet-pequeno.css" media="screen and (min-width: 768px) and (max-width: 991px)">
+
+    <link rel="stylesheet" href="style/tablet-grande.css" media="screen and (min-width: 992px) and (max-width: 1199px)">
+
+    <link rel="stylesheet" href="style/desktop.css" media="screen and (min-width: 1200px) and (max-width: 1919px)">
+
+    <link rel="stylesheet" href="style/telas-grandes.css" media="screen and (min-width: 1920px)">
+</head>
+<body>
+    <header>
+        <h1>Definições</h1>
+    </header>
+    <main>
+        <section class="sec1">
+            <h3>Vamos aprender um pouco sobre interações entre números?</h3>
+            <p class="descricao">Ponha valores (positivos ou negativos) nos campos abaixo e depois clique nas opções. Você verá que um mesmo par de números podem ter resultados diferentes dependendno do tipo do operador escolhido. As vezes dependo da ordem que são colocados também. </p>
+            <form action="script.js" method="post">
+                <div class="numero">
+                    <div>
+                        <label for="num1" class="valor1">Primeiro valor </label>
+                        <input type="number" class="input1" name="num1" id="fnum1" placeholder="ex: 750" required>
+                    </div>
+                    <div>
+                        <label for="num2" class="valor2">Segundo valor </label>
+                        <input type="number" class="input2" name="num2" id="fnum2" placeholder="ex: 100" required>
+                    </div>
+                </div>
+                <div class="botao">
+                    <input type="button" class="btn" value="Somar" onclick="somar()">
+        
+                    <input type="button" class="btn" value="Subtrair" onclick="subtr()">
+        
+                    <input type="button" class="btn" value="Multiplicar" onclick="mult()">
+        
+                    <input type="button" class="btn" value="Dividir" onclick="divi()">
+                </div>
+            </form>
+        </section>
+        <section class="sec2">
+            <div id="res">
+                
+            </div>
+            <div id="definicao">
+                <div class="soma">
+                    <p>A adição é uma operação matemática considerada básica, assim como a subtração, a multiplicação e a divisão. Essa operação é essencial para o nosso cotidiano e está ligada a acrescentar, juntar quantidades. Calcular a adição entre dois números é acrescentar uma certa quantia a outra já existente.</p>
+                    <p>Por exemplo, se tenho 8 bananas e compro mais 5 bananas, a adição é a operação que vai calcular a quantidade total de bananas, acrescentando 5 bananas às 8 que já tenho. Utilizamos o símbolo + (mais) entre os números para representar a adição, por exemplo, 5 + 8 (lê-se: cinco mais oito).</p>
+                    <div class="link">Para saber mais, acesse: <br> <a href="https://mundoeducacao.uol.com.br/matematica/adicao.htm" target="_blank" rel="external">Mundo Educação</a></div>
+                </div>
+                <div class="subtracao">
+                    <p>A subtração é uma operação matemática que, com a adição, multiplicação e divisão, é considerada básica. Essa operação é essencial para o dia a dia, e é considerada a inversa da adição.</p>
+            
+                    <p>Calcular a subtração entre dois números é diminuir uma certa quantia de outra já existente. Por exemplo, se havia 7 laranjas na fruteira e 3 foram consumidas, a quantidade de laranjas que restam é a diferença entre 7 e 3. Utilizamos o símbolo – (lê-se: menos) entre os números para representar a subtração, por exemplo, 7 – 3 (lê-se: sete menos três).</p>
+                    <div class="link">Para saber mais, acesse: <br> <a href="https://mundoeducacao.uol.com.br/matematica/subtracao.htm" target="_blank" rel="external">Mundo Educação</a></div>
+                </div>
+            
+                <div class="multiplicacao">
+                    <p>A multiplicação é uma dentre as quatro operações básicas da Matemática. Conhecemos como multiplicação a soma sucessiva de um número por ele mesmo. Para fazer a representação da multiplicação entre dois números, utilizamos o símbolo “×” ou o símbolo “·”. O resultado da multiplicação é conhecido como produto, e os números que serão multiplicados são chamados de fatores.</p>
+                    <p>Para encontrar o resultado da multiplicação, é necessário conhecer a tabuada e aprender a aplicar o algoritmo dessa operação quando necessário.</p>
+                    <div class="link">Para saber mais, acesse: <br> <a href="https://mundoeducacao.uol.com.br/matematica/multiplicacao.htm" target="_blank" rel="external">Mundo Educação</a></div>
+                </div>
+            
+                <div class="divisao">
+                    <p>Divisão, na Matemática, é a distribuição de determinado objeto em partes iguais. Ao dividir uma pizza, por exemplo, entre duas pessoas, o objeto “pizza” deve ser dividido em duas partes iguais, e cada uma dessas pessoas ficará com uma dessas partes.</p>
+                    <p>A divisão é uma operação básica da Matemática, assim como a multiplicação, adição e subtração. Multiplicação e divisão são operações inversas, por isso, a “prova real” da divisão é feita por meio de uma multiplicação.</p>
+                    <div class="link">Para saber mais, acesse: <br> <a href="https://mundoeducacao.uol.com.br/matematica/algoritmo-divisao.htm" target="_blank" rel="external">Mundo Educação</a> </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
